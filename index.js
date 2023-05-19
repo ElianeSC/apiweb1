@@ -1,5 +1,4 @@
-// teste de modificação
-// Importa os módulos necessários
+ //módulos necessários
 const express = require('express');
 const mysql = require('mysql');
 const cors = require('cors');
