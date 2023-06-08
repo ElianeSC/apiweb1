@@ -10,7 +10,7 @@ const port = process.env.PORT || 3000
 // Configurações da conexão com o banco de dados
 const db = mysql.createConnection({
     host: 'mysqlsenac4.mysql.database.azure.com',
-    user: 'usariosenac',
+    user: 'usuariosenac',
     password: 'Senac123',
     database: 'programadorweb'
   });
