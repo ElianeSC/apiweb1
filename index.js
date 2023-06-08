@@ -1,9 +1,11 @@
  //módulos necessários
+ //acao
 const express = require('express');
 const mysql = require('mysql');
 const cors = require('cors');
 const jwt = require('jsonwebtoken');
 const secretKey = '123456';
+const port = process.env.PORT || 3000
 
 // Configurações da conexão com o banco de dados
 const db = mysql.createConnection({
@@ -397,6 +399,6 @@ app.get('/matriculasPorAluno/:codigoaluno', (req, res) => {
 });
 
 // Inicia o servidor na porta 3000
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('Servidor iniciado na porta 3000');
   });
